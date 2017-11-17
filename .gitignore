@@ -68,3 +68,8 @@ fastlane/test_output
 
 .idea
 
+dollar.xcworkspace/
+dollar.xcodeproj
+Podfile.lock
+Pods/
+dollar.xcodeproj/project.pbxproj

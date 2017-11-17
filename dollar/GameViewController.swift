@@ -10,7 +10,12 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+import SocketRocket
+
 class GameViewController: UIViewController {
+
+    let v = SRWebSocket.init()
+//    let _webSocket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"ws://localhost:8086/v1/room/xx/xx"]]];
 
     override func viewDidLoad() {
         super.viewDidLoad()
