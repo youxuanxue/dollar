@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
             window.backgroundColor = UIColor.white
-            window.rootViewController = UIViewController()
+            window.rootViewController = RoomViewController()
             window.makeKeyAndVisible()
         }
     return true

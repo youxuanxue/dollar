@@ -7,6 +7,8 @@ target 'dollar' do
 
   # Pods for dollar
   pod 'SocketRocket'
+  pod 'SwiftSocket'
+  pod 'Starscream', '~> 3.0.2'
 
   target 'dollarTests' do
     inherit! :search_paths

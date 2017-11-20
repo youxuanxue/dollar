@@ -10,8 +10,10 @@
 		04A3643E05F591FCEE42C585 /* Pods_dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ABEF48150F355E003AFA26 /* Pods_dollar.framework */; };
 		385061D99B12462C39A8847F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385063590D25079A240D5644 /* GameScene.swift */; };
 		385063B74762C6DE4CBE8927 /* dollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385063BF0F0368562F2361AD /* dollarTests.swift */; };
-		385064AAF0696D8D3B8CC3E9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385065DD782326327736B95C /* GameViewController.swift */; };
+		385064AAF0696D8D3B8CC3E9 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385065DD782326327736B95C /* RoomViewController.swift */; };
+		385064F6F8B317BAF61016CF /* RoomGetOrCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38506E467B1026745ABE873C /* RoomGetOrCreateViewController.swift */; };
 		385064FD74F5ECC60E6B84B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38506A8798C2BA9709C83A29 /* AppDelegate.swift */; };
+		38506C6E2DBF7693565F09F4 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385064FE10E52F2B7A990C9F /* TransitionDelegate.swift */; };
 		38506C74EFA3A8FA0E3336C3 /* dollarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3850686BDB26082B17D5379C /* dollarUITests.swift */; };
 		38506D8F8ED0D5238929C1FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38506D1EBC764044B81BD0E3 /* LaunchScreen.storyboard */; };
 		38506EFF66AD0E64D24BA8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38506A19266CC028F070656A /* Assets.xcassets */; };
@@ -44,7 +46,8 @@
 		385063590D25079A240D5644 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		385063BF0F0368562F2361AD /* dollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dollarTests.swift; sourceTree = "<group>"; };
 		38506493E1051DAC5E2EC581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		385065DD782326327736B95C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		385064FE10E52F2B7A990C9F /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		385065DD782326327736B95C /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		3850672ADF166A6FA7038A14 /* dollar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dollar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3850686BDB26082B17D5379C /* dollarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dollarUITests.swift; sourceTree = "<group>"; };
 		38506A19266CC028F070656A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		38506CAE17E032D1CB2800CD /* dollarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dollarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38506DA05B12925CF3C0E4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38506DDBABCAC85DAE70DB84 /* dollarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dollarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38506E467B1026745ABE873C /* RoomGetOrCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomGetOrCreateViewController.swift; sourceTree = "<group>"; };
 		3F37AE4C4E33139BB2F6F371 /* Pods-dollarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dollarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dollarTests/Pods-dollarTests.release.xcconfig"; sourceTree = "<group>"; };
 		45FDAA066EE6E8504D5B7AE4 /* Pods-dollar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dollar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dollar/Pods-dollar.debug.xcconfig"; sourceTree = "<group>"; };
 		52AD92836B30145565FFC0B0 /* Pods_dollarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dollarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +101,11 @@
 				38506D1EBC764044B81BD0E3 /* LaunchScreen.storyboard */,
 				38506A8798C2BA9709C83A29 /* AppDelegate.swift */,
 				385063590D25079A240D5644 /* GameScene.swift */,
-				385065DD782326327736B95C /* GameViewController.swift */,
+				385065DD782326327736B95C /* RoomViewController.swift */,
+				38506B1082A5D08A3DC928BD /* model */,
+				38506A9C6B2817AC84205FCC /* transition */,
+				38506F479204735242591DCE /* view */,
+				3850689CC4A8C00FAC7B37BC /* viewcontroller */,
 			);
 			path = dollar;
 			sourceTree = "<group>";
@@ -130,6 +138,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3850689CC4A8C00FAC7B37BC /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				38506E467B1026745ABE873C /* RoomGetOrCreateViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		38506A43ADA3CCD2C4F5719E = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +156,28 @@
 				BF7C26378A869CC7F46B9AD7 /* Pods */,
 				5D31AD5F5B5CAA6407B3D0E1 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		38506A9C6B2817AC84205FCC /* transition */ = {
+			isa = PBXGroup;
+			children = (
+				385064FE10E52F2B7A990C9F /* TransitionDelegate.swift */,
+			);
+			path = transition;
+			sourceTree = "<group>";
+		};
+		38506B1082A5D08A3DC928BD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		38506F479204735242591DCE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		5D31AD5F5B5CAA6407B3D0E1 /* Frameworks */ = {
@@ -293,10 +331,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dollar/Pods-dollar-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,7 +491,9 @@
 			files = (
 				385064FD74F5ECC60E6B84B9 /* AppDelegate.swift in Sources */,
 				385061D99B12462C39A8847F /* GameScene.swift in Sources */,
-				385064AAF0696D8D3B8CC3E9 /* GameViewController.swift in Sources */,
+				385064AAF0696D8D3B8CC3E9 /* RoomViewController.swift in Sources */,
+				38506C6E2DBF7693565F09F4 /* TransitionDelegate.swift in Sources */,
+				385064F6F8B317BAF61016CF /* RoomGetOrCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
